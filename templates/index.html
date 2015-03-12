@@ -3,6 +3,15 @@
     <head></head>
     <body>
         <h1>BASEBALL</h1>
-        {{object_list}}
+        <table border=1 cellpadding=7>
+            <tr>
+                <th>Name</th>
+            </tr>
+            {% for obj in object_list %}
+            <tr>
+                <td>{{obj.FIRSTNAME}} {{obj.LASTNAME}}</td>
+            </tr>
+            {% endfor %}
+        </table>
     </body>
 </html>
